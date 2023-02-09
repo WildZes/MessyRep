@@ -1,5 +1,6 @@
 from sqlalchemy import Column, String, Integer, Boolean
 from sqlalchemy.ext.declarative import declarative_base
+from models.business import Business
 
 # инициализация декларативного стиля
 Base = declarative_base()
