@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 
-class Entrepeneur(Base):
+class Entrepeneurs(Base):
   
   __tablename__ = 'entrepreneurs'
   
