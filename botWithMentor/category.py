@@ -11,10 +11,10 @@ class Category(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String, index=True)
-    entrepreneur_id = Column(Integer, ForeignKey('entrepreneur.id'))
-    entrepreneur = relationship(
-        Entrepreneur,
-        backref=backref('entrepreneur',
+    business_id = Column(Integer, ForeignKey('business.id'))
+    business = relationship(
+        Business,
+        backref=backref('business',
                         uselist=True,
                         cascade='delete-orphan, all'))
 
